@@ -1,0 +1,91 @@
+﻿<Window x:Class="ярик2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ярик2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920">
+    <Grid  Background="#C0D2E6">
+        <StackPanel MinWidth="650" MinHeight="350" Margin="0,10,0,0">
+            <TextBlock  Height="74" Width="370" FontSize="60" FontWeight="Bold" Foreground="#1C666D"><Run Text="Super Travel"/></TextBlock>
+            <TextBlock Foreground="#755E66" FontSize="40" FontWeight="Heavy" Margin="20 20 700 0" Height="78" Width="396">Куда(страна)</TextBlock>
+            <Button FontWeight="Heavy" FontSize="40" Margin="500 -90 0 0" Click="Button_Click" Foreground="#D1AD9F" Background="#C6DAE1" Height="60" RenderTransformOrigin="0.5,0.5" Width="284">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform> Выбрать
+            </Button>
+
+            <ComboBox FontSize="40" FontWeight="Heavy" Foreground="#D1AD9F" Background="#C6DAE1" x:Name="Countrys" Height="54" Margin="0 -90 200 0" Width="339"/>
+            <TextBlock Foreground="#755E66" FontSize="40" FontWeight="Heavy" Margin="20 20 700 0" Height="78" Width="396">Куда(город)</TextBlock>
+            <!--<Button FontWeight="Heavy" FontSize="40" Margin="500 -90 0 0" Click="Button_Click_2" Foreground="#D1AD9F" Background="#C6DAE1" Height="60" RenderTransformOrigin="0.5,0.5" Width="284">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform> Выбрать
+            </Button>-->
+            <ComboBox FontSize="40" FontWeight="Heavy" Foreground="#D1AD9F" Background="#C6DAE1" x:Name="cityes" Height="54" Margin="0 -90 200 0" Width="339" />
+            <TextBlock Foreground="#755E66" FontSize="40" FontWeight="Heavy" Margin="20 20 700 0" Height="78" Width="150">Ночей</TextBlock>
+            <!--<Button FontWeight="Heavy" FontSize="40" Margin="500 -90 0 0" Click="Button_Click_2" Foreground="#D1AD9F" Background="#C6DAE1" Height="60" RenderTransformOrigin="0.5,0.5" Width="284">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform> Выбрать
+            </Button>-->
+            <ComboBox  FontSize="40" FontWeight="Heavy" Foreground="#D1AD9F" Background="#C6DAE1" x:Name="Nights" Height="54" Margin="0 -90 200 0" Width="339"/>
+            <TextBlock Foreground="#755E66" FontSize="40" FontWeight="Heavy" Margin="20 20 700 0" Height="78" Width="234">Человек</TextBlock>
+            <!--<Button FontWeight="Heavy" FontSize="40" Margin="500 -90 0 0" Click="Button_Click_2" Foreground="#D1AD9F" Background="#C6DAE1" Height="60" RenderTransformOrigin="0.5,0.5" Width="284">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform> Выбрать
+            </Button>-->
+            <ComboBox FontSize="40" FontWeight="Heavy" Foreground="#D1AD9F" Background="#C6DAE1" x:Name="Peoples" Height="54" Margin="0 -90 200 0" Width="339"/>
+
+
+            <TextBlock Foreground="#755E66" FontSize="40" FontWeight="Heavy" Margin="20 20 700 0" Height="78" Width="137">Когда</TextBlock>
+            <DatePicker Foreground="#D1AD9F" Background="#C6DAE1" FontSize="40" FontWeight="Heavy" Margin="0 -90 200 0" Width="336" x:Name="Dates" Height="62"></DatePicker>
+            <!--<Button FontWeight="Heavy" FontSize="25" Margin="500 -90 0 0" Click="Button_Click_1" Foreground="#D1AD9F" Background="#C6DAE1" Height="60" RenderTransformOrigin="0.5,0.5" Width="332">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform> Проверить вашу путёвку
+            </Button>-->
+            <TextBlock Foreground="#755E66" FontSize="40" FontWeight="Heavy" Margin="-440 0 0 0" Height="78" Width="137">Имя</TextBlock>
+            <TextBox Foreground="#D1AD9F" Background="LightGray" FontSize="40" FontWeight="Heavy" Margin="-300 -0 200 0" Width="336" x:Name="Names" Height="62"></TextBox>
+            <TextBlock Foreground="#755E66" FontSize="40" FontWeight="Heavy" Margin="250 -200  0 0" Height="75" Width="126">E-mail</TextBlock>
+            <TextBox Foreground="#D1AD9F" Background="LightGray" FontSize="40" FontWeight="Heavy" Margin="500 -70 200 0" Width="360" x:Name="Emails" Height="62"></TextBox>
+            <Button FontWeight="Heavy" FontSize="40" Margin="-40 30 0 0" Click="Button_Click_2" Foreground="#D1AD9F" Background="#C6DAE1" Height="75" RenderTransformOrigin="0.5,0.5" Width="318">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform> Забронировать
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
